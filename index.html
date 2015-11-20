@@ -1,9 +1,11 @@
 <html>
   <head>
     <title>Service Worker Test</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
     Hello world!
+    <script src="app.js"></script>
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/swtest/sw.js').then(function(registration) {
